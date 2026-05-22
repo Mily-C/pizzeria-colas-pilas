@@ -88,6 +88,7 @@
         	this.lstPedidos.Name = "lstPedidos";
         	this.lstPedidos.Size = new System.Drawing.Size(300, 238);
         	this.lstPedidos.TabIndex = 5;
+        	this.lstPedidos.SelectedIndexChanged += new System.EventHandler(this.BtnNuevoPedido_Click);
         	// 
         	// lstBitacora
         	// 

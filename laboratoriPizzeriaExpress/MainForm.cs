@@ -144,7 +144,11 @@ namespace laboratoriPizzeriaCampusExpress
             // Mostrar cola de pedidos
             foreach (string p in colaPedidos)
                 lstPedidos.Items.Add(p);
-            if (colaPedidos.Count == 0)
+            
+            foreach (string pp in Pedidos_Premium)
+            	lstPedidos.Items.Add(pp);
+            
+            if (colaPedidos.Count == 0 || Pedidos_Premium.Count == 0)
                 lstPedidos.Items.Add("(Sin pedidos pendientes)");
 
             // Mostrar bitácora (pila)
