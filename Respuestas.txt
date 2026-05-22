@@ -1,0 +1,11 @@
+1. ¿Por qué un sistema de delivery usa Queue para los pedidos pero Stack para la bitácora? ¿Qué problema operativo surgiría si invertimos las estructuras?
+
+R) Al usar Queue se mantiene un orden entre los pedidos y el primer pedido que entra, es el primero que sale, mientras que el stack en la bitacora, va "guardando" el historial de pedidos y con el tiempo, el 1ero queda de ultimo, en el caso de ser al reves, el ultimo pedido saldria de primero
+
+2. ¿Por qué es obligatorio verificar Count == 0 antes de Dequeue() o Pop()? ¿Qué ocurre en ejecución si se omite esta validación?
+
+R) Para ver si hay algo con que trabajar
+
+3. En el método Deshacer, ¿por qué es necesario analizar el texto con .StartsWith() antes de revertir? ¿Qué error de estado evitaría esto?
+
+R)Porque usando esa funcion el programa tiene constancia de a donde va a empezar a buscar para eliminar esa ultima accion
